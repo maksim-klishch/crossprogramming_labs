@@ -7,7 +7,6 @@ namespace ShipConsoleApp
     {
         static void Main(string[] args)
         {
-            // Creating instances of ships
             Ship cargoShip = new CargoShip("Cargo Ship 1", ShipType.Standard, "Port A", 1000, "Captain A",
                 20, "2022-01-01", 5000, 15.0, 0.0, "Bulk Cargo", 2000);
 

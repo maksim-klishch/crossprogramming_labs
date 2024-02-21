@@ -18,6 +18,9 @@
 
   <ItemGroup>
     <Using Include="Microsoft.VisualStudio.TestTools.UnitTesting" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="../ShipLib/lib.csproj" />
   </ItemGroup>
 

@@ -12,16 +12,16 @@ namespace ShipLib
         public string Title { get; set; }
         public ShipType Type { get; set; }
         public string HomePort { get; set; }
-        public int Tonnage { get; set; }
+        public uint Tonnage { get; set; }
         public string Captain { get; set; }
-        public int NumberOfCrewMembers { get; set; }
+        public uint NumberOfCrewMembers { get; set; }
         public string DateOfLaunching { get; set; }
-        public int EnginePower { get; set; }
+        public uint EnginePower { get; set; }
         public double CurrentSpeed { get; set; }
         public double DeltaSpeed { get; set; }
 
-        public Ship(string title, ShipType type, string homePort, int tonnage, string captain,
-            int numberOfCrewMembers, string dateOfLaunching, int enginePower, double currentSpeed, double deltaSpeed)
+        public Ship(string title, ShipType type, string homePort, uint tonnage, string captain,
+            uint numberOfCrewMembers, string dateOfLaunching, uint enginePower, double currentSpeed, double deltaSpeed)
         {
             Title = title;
             Type = type;
@@ -44,11 +44,11 @@ namespace ShipLib
     public class CargoShip : Ship
     {
         public string CargoType { get; set; }
-        public int CargoCapacity { get; set; }
+        public uint CargoCapacity { get; set; }
 
-        public CargoShip(string title, ShipType type, string homePort, int tonnage, string captain,
-            int numberOfCrewMembers, string dateOfLaunching, int enginePower, double currentSpeed, double deltaSpeed,
-            string cargoType, int cargoCapacity)
+        public CargoShip(string title, ShipType type, string homePort, uint tonnage, string captain,
+            uint numberOfCrewMembers, string dateOfLaunching, uint enginePower, double currentSpeed, double deltaSpeed,
+            string cargoType, uint cargoCapacity)
             : base(title, type, homePort, tonnage, captain, numberOfCrewMembers, dateOfLaunching, enginePower, currentSpeed, deltaSpeed)
         {
             CargoType = cargoType;
@@ -58,12 +58,12 @@ namespace ShipLib
 
     public class CruiseShip : Ship
     {
-        public int OccupiedSeats { get; set; }
-        public int FreeSeats { get; set; }
+        public uint OccupiedSeats { get; set; }
+        public uint FreeSeats { get; set; }
 
-        public CruiseShip(string title, ShipType type, string homePort, int tonnage, string captain,
-            int numberOfCrewMembers, string dateOfLaunching, int enginePower, double currentSpeed, double deltaSpeed,
-            int occupiedSeats, int freeSeats)
+        public CruiseShip(string title, ShipType type, string homePort, uint tonnage, string captain,
+            uint numberOfCrewMembers, string dateOfLaunching, uint enginePower, double currentSpeed, double deltaSpeed,
+            uint occupiedSeats, uint freeSeats)
             : base(title, type, homePort, tonnage, captain, numberOfCrewMembers, dateOfLaunching, enginePower, currentSpeed, deltaSpeed)
         {
             OccupiedSeats = occupiedSeats;
