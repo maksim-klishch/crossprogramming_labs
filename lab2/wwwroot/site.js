@@ -144,8 +144,6 @@ function closeInput() {
 
 }
 
- 
-
 function _displayCount(itemCount) {
 
   const name = (itemCount === 1) ? 'to-do' : 'to-dos';
